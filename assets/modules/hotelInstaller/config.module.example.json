@@ -1,0 +1,66 @@
+// Пример конфига в админке. Модули, Инсталлятор отелей (редактировать), вкладка свойства
+{
+    "hotelTpl": [
+        {
+            "label": "ID шаблона: отель",
+            "type": "integer",
+            "value": "27",
+            "default": "",
+            "desc": ""
+        }
+    ],
+    "cityTpl": [
+        {
+            "label": "ID шаблона: город",
+            "type": "integer",
+            "value": "26",
+            "default": "",
+            "desc": ""
+        }
+    ],
+    "hotelsParentId": [
+        {
+            "label": "ID корневой папки загрузки",
+            "type": "integer",
+            "value": "174",
+            "default": "",
+            "desc": ""
+        }
+    ],
+    "imagesLimit": [
+        {
+            "label": "Лимит загрузки картинок, штук",
+            "type": "integer",
+            "value": "12",
+            "default": "",
+            "desc": ""
+        }
+    ],
+    "domain": [
+        {
+            "label": "Аккаунт: domain",
+            "type": "text",
+            "value": "test.nsm1008.beget.tech",
+            "default": "",
+            "desc": ""
+        }
+    ],
+    "apiKey": [
+        {
+            "label": "Аккаунт: apiKey",
+            "type": "text",
+            "value": "dabc-f1e883b0-714179a0-28ee0c37-766f",
+            "default": "",
+            "desc": ""
+        }
+    ],
+    "apiSecret": [
+        {
+            "label": "Аккаунт: apiSecret",
+            "type": "text",
+            "value": "b92e-bf930a8c2e1a-4de00da378e9-5e9bf7f29685-8333ac1456b6-42236fe3f7f2-39ce",
+            "default": "",
+            "desc": ""
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+/vendor
+/runtime/*
+!/runtime/.htaccess
+*.phar
+*.log
+*.dump
+*.bin
+composer.lock

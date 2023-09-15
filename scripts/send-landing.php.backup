@@ -1,0 +1,97 @@
+﻿<?php
+if (empty($_POST)) {
+    die();
+}
+if (empty($_POST['rid'])) {
+    die('Aдминистратором не указан rid - id ресурса');
+}
+if (empty($_POST['email'])) {
+    die('Пользователем не указан email');
+}
+
+require('phpmailer/class.phpmailer.php');
+
+/* Подключение MODX */
+// initialize the variables prior to grabbing the config file
+$database_type = '';
+$database_server = '';
+$database_user = '';
+$database_password = '';
+$dbase = '';
+$table_prefix = '';
+$base_url = '';
+$base_path = '';
+// get the required includes
+$rt = @include_once(dirname(__FILE__).'/../admin/includes/config.inc.php');
+// Be sure config.inc.php is there and that it contains some important values
+if(!$rt || !$database_type || !$database_server || !$database_user || !$dbase) {
+    echo "Ошибка с файлом конфигурации";
+    exit;
+}
+define('MODX_API_MODE', true);
+// initiate a new document parser
+include_once(MODX_MANAGER_PATH.'includes/document.parser.class.inc.php');
+$modx = new DocumentParser;
+$modx->getSettings();
+/* Подключение MODX КОНЕЦ*/
+
+// Получаем значения TV
+$tvsDB = $modx->getTemplateVars(
+    array('country-about','guide-file'), 
+    'name',
+    $_POST['rid']*1
+);
+$tvs = Array();
+foreach ($tvsDB as $tvdb) {
+    $tvs[$tvdb['name']] = $tvdb['value'];
+}
+if (empty($tvs['country-about']) || empty($tvs['guide-file'])) {
+    die('Администратором указаны не все параметры страницы');
+}
+
+// Файл путеводителя
+$filePath = '../'.$tvs['guide-file'];
+if (!file_exists($filePath)) {
+    $filePath = '../'.urldecode($tvs['guide-file']);
+    if (!file_exists($filePath))
+        die("Файл путеводителя не найден");
+}
+// Русскоязычные названия файлов подрезаются до первого ansi символа - делаем вручную
+$filename = explode('/',$filePath);
+$filename = end($filename);
+
+// Настройки из MODX панели админа
+$email = $modx->getConfig('emailsender');
+$sitename = $modx->getConfig('site_name');
+$siteurl = str_replace('scripts/', '', $modx->getConfig('site_url')); // убираем текущую папку из пути
+
+foreach ($_POST as $k => &$value) {
+    $value = filter_var($value, FILTER_SANITIZE_STRING);
+}
+
+// Отправляем админу
+$mail = new PHPMailer;
+$mail->CharSet = 'UTF-8';
+$mail->isHTML(true);
+$mail->setFrom($email, $sitename);
+$mail->addAddress($email, $sitename);
+$mail->Subject = "Путеводитель по {$tvs['country-about']}";
+$mail->Body = "
+    <p>PDF-путеводитель по {$tvs['country-about']}</p>
+    <p><strong>Имя:</strong> {$_POST["name"]}</p>
+    <p><strong>Email:</strong> {$_POST["email"]}</p>
+";
+$mail->send();
+
+// Отправляем пользователю
+$mail->clearAddresses(); // админа снимаем
+$mail->addAddress($_POST['email'], $_POST['name']);
+$mail->addAttachment($filePath, $filename);
+$mail->Body = "PDF-путеводитель по {$tvs['country-about']} и другим актуальным пляжным направлениям отдыха";
+
+if(!$mail->send()) {
+    echo 'Ошибка при отправке письма';
+    // echo 'Mailer Error: ' . $mail->ErrorInfo;
+} else {
+    echo 'success';
+}

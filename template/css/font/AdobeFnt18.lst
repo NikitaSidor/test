@@ -1,0 +1,48 @@
+%!Adobe-FontList 1.18
+%Locale:0x419
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:d:\server2\domains\ta.loc\template\css\Font\bebas_neue_cyrillic-webfont.eot
+FileModTime:1527847380
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BebasNeueCyrillic
+FamilyName:Bebas Neue Cyrillic
+StyleName:Regular
+FullName:Bebas Neue Cyrillic Regular
+MenuName:Bebas Neue Cyrillic
+StyleBits:0
+FamilyNameNative:Bebas Neue Cyrillic
+StyleNameNative:Regular
+FullNameNative:Bebas Neue Cyrillic Regular
+WritingScript:Cyrillic
+OutlineFileName:d:\server2\domains\ta.loc\template\css\Font\bebas_neue_cyrillic-webfont.ttf
+DataFormat:sfntData
+hasSVG:no
+FileLength:65868
+FileModTime:1527847380
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Bebas Neue Cyrillic
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:d:\server2\domains\ta.loc\template\css\Font\bebas_neue_cyrillic-webfont.woff
+FileModTime:1527847380
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:d:\server2\domains\ta.loc\template\css\Font\bebas_neue_cyrillic-webfont.woff2
+FileModTime:1527847380
+%EndFont
+

@@ -1,0 +1,80 @@
+[v-cloak] {
+    display: none;
+}
+input[type='text'].w5digits {
+    width: 52px;
+    text-align: center;
+    
+}
+
+#countriesModifier .item {
+    margin-bottom: 20px;
+}
+.countryInfoRow button,
+.tourTypesRow button {
+    font-size: .6772rem;
+}
+.countryInfoRow .flag {
+    position: relative;
+    top: 2px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+}
+.countryInfoRow .name {
+    font-size: 14px;
+    font-weight: bold;
+}
+.tourTypesRow {
+    margin: 0px -5px;
+}
+.tourTypesRow > div {
+    margin: 5px;
+}
+.temperaturesRow {
+    position: relative;
+    padding-left: 40px;
+}
+.temperaturesRow .weatherIcons {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.temperaturesRow .weatherIcons div {
+    font-size: 20px;
+    line-height: 30px;
+}
+.temperaturesRow div div {
+    margin: 5px 0 0;
+}
+.temperaturesRow .month {
+    text-align: center;
+}
+.temperaturesRow .fa-sun {
+    color: #e9a126;
+}
+.temperaturesRow .fa-water {
+    color: #5290de;
+}
+.temperaturesRow input {
+    text-align: center;
+}
+.temperaturesRow .air input {
+    background: #fcf1df;
+}
+.temperaturesRow .water input {
+    background: #d4e4f7;
+}
+
+.tourTypesMonthsRow {
+    
+}
+.tourTypesMonthsRow .row {
+    justify-content: flex-end;
+    align-items: center;
+}
+.tourTypesMonthsRow .tourTypeName {
+    padding: 0 10px;
+}
+.tourTypesMonthsRow .btn {
+    font-size: 12px;
+    margin: 3px;
+}

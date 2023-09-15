@@ -1,0 +1,21 @@
+{
+    "name": "mmaurice/tgbot-app",
+    "description": "Telegram bot framework example application",
+    "type": "project",
+    "license": "MIT",
+    "authors": [{
+        "name": "Moss Maurice",
+        "email": "kreexus@yandex.ru",
+        "role": "developer"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4",
+        "mmaurice/tgbot-core": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "mmaurice\\tgbot\\app\\": "./"
+        }
+    }
+}

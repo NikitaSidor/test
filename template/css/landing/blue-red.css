@@ -1,0 +1,92 @@
+/*colorBase-RGBA!!!*/
+test{
+color:#68C7DC;/*$colorBase*/
+color:#F6F6F6;/*$colorAdditional*/
+color:#E56B6C;/*$colorButton*/
+color:#fff;/*$colorBaseInverse*/
+color:#fff;/*$colorAdditionalInverse*/
+color:#333;/*$colorText*/
+}
+landColors{color:#E56B6C; /*mainColor*/color:#68C7DC; /*mainColor2*/color:#322837; /*mainColor2 hover*/color:#da3535; /*MC hover*/color:#a93031; /*MC shadow*/color:#dcf0f5; /*MC2 light bg */}
+body {background-image: url(blue-red/bg-tourism.png);}
+.top-line__clock {background: #fff url(blue-red/clock.png) no-repeat top left;}
+.prefer__advance:nth-of-type(1) {background: url(blue-red/bot_icon.png) no-repeat top center;}
+.prefer__advance:nth-of-type(2) {background: url(blue-red/bot_icon2.png) no-repeat top center;}
+.prefer__advance:nth-of-type(3) {background: url(blue-red/bot_icon3.png) no-repeat top center;}
+.prefer__advance:nth-of-type(4) {background: url(blue-red/bot_icon4.png) no-repeat top center;}
+.prefer__advance:nth-of-type(5) {background: url(blue-red/bot_icon5.png) no-repeat top center;}
+.dops__advance:nth-of-type(1) {background: url(blue-red/usl_1.png) no-repeat top center;}
+.dops__advance:nth-of-type(2) {background: url(blue-red/usl_2.png) no-repeat top center;}
+.dops__advance:nth-of-type(3) {background: url(blue-red/usl_3.png) no-repeat top center;}
+.dops__advance:nth-of-type(4) {background: url(blue-red/usl_4.png) no-repeat top center;}
+.dops__advance:nth-of-type(5) {background: url(blue-red/usl_5.png) no-repeat top center;}
+.how__advance:nth-of-type(1):before {background: url(blue-red/how_1.png) no-repeat top center;}
+.how__advance:nth-of-type(2):before {background: url(blue-red/how_2.png) no-repeat top center;}
+.how__advance:nth-of-type(3):before {background: url(blue-red/how_3.png) no-repeat top center;}
+.how__advance:nth-of-type(4):before {background: url(blue-red/how_4.png) no-repeat top center;}
+.how__advance:nth-of-type(5):before {background: url(blue-red/how_5.png) no-repeat top center;}
+.how__advance:after{content: url(blue-red/how-arrow.png);}
+.mainColor, .thank_message b{color:#E56B6C;}
+.mainColor2{color:#68C7DC;}
+.top-line .top-line__calc{background:#E56B6C;box-shadow:inset 0 -2px #a93031;}
+.top-line__where_buy{color:#E56B6C;}
+.top-line__where_buy:hover,.call_order:hover{color:#da3535;}
+.call_order{color:#E56B6C;}
+.menu nav ul li{background:#68C7DC;}
+.landingTourForm input,.landingTourForm select,.landingTourForm textarea{border:1px solid #E56B6C;}
+.landingTourForm  .send_top_form,.send_why_form,.send_useful_form,.send_subscribe_form,.kurort-form__send{background:#E56B6C  no-repeat 44px center;box-shadow:inset 0 -2px #a93031;}
+.best-price h2{color:#68C7DC;}
+.tour-button{background:#E56B6C;box-shadow:inset 0 -2px #a93031;}
+.cant-find-tour p:nth-of-type(1){color:#E56B6C;}
+.feedback_name{color:#E56B6C;}
+.feedback_where{color:#68C7DC;}
+.feedback_where span{color:#E56B6C;}
+.why_title{color:#68C7DC;}
+.why input,.useful_form input,.subscribe_form input{border:1px solid #68C7DC;}
+.useful_title{color:#68C7DC;}
+.dop_title{color:#68C7DC;}
+.line_title{color:#68C7DC;}
+.how_title{color:#68C7DC;}
+.subscribe__inside p{color:#68C7DC;}
+.subscribe__inside p span{color:#E56B6C;}
+.contacts_desc h2{color:#68C7DC;}
+.contacts_desc .phone a{color:#68C7DC;}
+.contacts_desc div span{color:#68C7DC;}
+.top-line__ss{color:#E56B6C;}
+.feedback-form__header,.konsult-form__header,.kurort-form__header{color:#68C7DC;}
+feedback input{border:1px solid #E56B6C;}
+feedback input[type=submit]{background:#E56B6C;box-shadow:inset 0 -2px #a93031;}
+.step select{border:1px solid #E56B6C;}
+.burger-menu.opened{color:#68C7DC;}
+.header{position:relative;    /*background: #fff;*/}
+.top-line__calc:hover{background:#da3535;}
+.menu{background:#68C7DC;}
+.menu nav ul li:hover{background:#2b9cb6;}
+.top_slider__form  .send_top_form:hover,.send_why_form:hover{background:#da3535 no-repeat 44px center;}
+.form [type="submit"],.send_useful_form,.send_subscribe_form,.kurort-form__send{background:#E56B6C;}
+.form [type="submit"]:hover,.send_useful_form:hover,.send_subscribe_form:hover,.kurort-form__send:hover{background:#da3535;}
+.tour-button:hover{background:#da3535;}
+.lines{background:#dcf0f5;}
+.tour_search{background:#dcf0f5;}
+.lines{background:#dcf0f5;}
+.subscribe{background:#dcf0f5 url(blue-red/stripes-bg.jpg) repeat;}
+feedback input[type=submit]:hover{background:#da3535;}
+.landingTourForm{background:#dcf0f5;}
+.ui-widget-header{background:#8ea3ae;}
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus{border:1px solid #cadc4e;}
+.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active{border:1px solid #cadc4e;background:#cadc4e;}
+.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{border:1px solid #fcefa1;background:#fbf9ee url('../i/ui/ui-bg_glass_55_fbf9ee_1x400.png') 50% 50% repeat-x;}
+.social__link{background: #E56B6C url(/template/i/social-icon.png)  no-repeat;}
+.social__link:hover { background-color: #da3535; }
+.icon-vk { background-position: 0 -120px; }
+.icon-tw { background-position: 0 -90px; }
+.icon-fb { background-position: 0 0; }
+.icon-gp { background-position: 0 -30px; }
+.icon-in { background-position: 0 -60px; }
+.icon-ok { background-position: 0 -150px; }
+.burger-menu {
+    background: url(blue-red/burger-menu.png) no-repeat bottom left;
+}
+.burger-menu.opened {
+    background: #fff url(blue-red/burger-menu.png) no-repeat top left;
+}

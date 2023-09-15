@@ -1,0 +1,15 @@
+Уважаемый(ая) [+recipient.username+],
+
+В раздел, на который вы подписаны, добавлен новый вопрос/отзыв.
+
+-----
+Имя: [+comment.custom.name+]
+Email: [+comment.custom.email+] 
+[+comment.title+]
+
+
+[+comment.content+]
+-----
+
+Отписаться от уведомлений: [+siteurl+][+jot.link.unsubscribe+]
+
